@@ -138,6 +138,7 @@ input {
 .scrollTop:active {
     filter: brightness(90%);
     -webkit-filter: brightness(90%);
+    background-color: transparent;
 }
 
 .scrollDown {
