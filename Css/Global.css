@@ -66,6 +66,7 @@ body {
     background-color: var(--backC);
     /* background-image: url("../Image/bootstrap.jpg"); */
     font-family: 'Shadows Into Light', "ink free", sans-serif, cursive;
+    overflow-x: hidden;
 }
 
 /* width */
@@ -99,7 +100,7 @@ a {
 }
 
 hr {
-    width: 30%;
+    width: 37.5%;
     margin: 10px auto;
     border-color: var(--borderC);
 }
