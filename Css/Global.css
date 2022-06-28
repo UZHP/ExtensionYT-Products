@@ -99,7 +99,7 @@ a {
 }
 
 hr {
-    width: 500px;
+    width: 30%;
     margin: 10px auto;
     border-color: var(--borderC);
 }
