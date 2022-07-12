@@ -155,7 +155,7 @@
     background-color: #FFF;
     position: absolute;
     bottom: -15px;
-    left: 0px;
+    left: 50%;
     width: 0%;
     border-radius: 2.5px;
     transition: all .5s ease-in-out;
@@ -170,6 +170,7 @@
 }
 
 .upLinks:hover::before {
+    left: 0;
     width: 100%;
 }
 
@@ -188,4 +189,37 @@
 
 .upLinks:hover {
     color: var(--mainC);
+}
+
+/* Head Menu */
+
+.headMenu {
+    display: none;
+    height: 40px;
+    padding: 7.5px 12.5px;
+    cursor: url(https://i.postimg.cc/4dTKNxQz/1p.png), pointer !important;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.headMenu:hover {
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+
+.headMenu svg {
+    fill: var(--whiteC);
+}
+
+@media (max-width: 760px) {
+    .headLinks {
+        display: none;
+    }
+
+    .headMenu {
+        display: flex;
+    }
 }

@@ -23,17 +23,19 @@
     color: var(--whiteC);
     border-top: 1px solid var(--whiteC);
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 10px;
     box-shadow: 0 -5px 10px var(--mainShadowC);
 }
 
-/* Left */
+/* Links */
 
 .endLinks {
     display: flex;
     flex-flow: column wrap;
+    /* width: 165px; */
+    margin: 0 10px;
 }
 
 .socialLinks {
@@ -43,11 +45,13 @@
     text-transform: capitalize;
 }
 
-/* Center */
+/* Sections */
 
 .endSections {
     display: flex;
     flex-flow: column wrap;
+    /* width: 97.5px; */
+    margin: 0 10px;
 }
 
 .pageSectionText {
@@ -71,8 +75,13 @@
     color: var(--mainC);
 }
 
+.LinksC {
+    display: block;
+}
+
 .LinksC a {
     color: var(--darkC);
+    font-size: auto;
     text-transform: capitalize;
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -85,11 +94,29 @@
     color: var(--mainC);
 }
 
-/* Right */
+/* Connect Us */
+
+.contactUsSection {
+    display: flex;
+    flex-flow: column wrap;
+    /* width: 85px; */
+    margin: 0 10px;
+}
+
+.contactUsHead {
+    color: var(--whiteC);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/* Info */
 
 .flexText {
-    display: grid;
+    display: flex;
     text-transform: capitalize;
+    /* width: 410px; */
+    flex-direction: column;
+    margin: 0 10px;
 }
 
 .do {
@@ -138,20 +165,25 @@
 }
 
 .firstText {
-    display: inline-flex;
-    align-items: center;
-    max-width: 500px;
+    display: flex;
     word-wrap: break-word;
     word-break: keep-all;
     margin-bottom: 10px;
     font-family: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .endText {
     display: flex;
     align-items: flex-end;
-    max-width: 500px;
     word-wrap: break-word;
     word-break: keep-all;
     font-family: 6px;
+}
+
+@media (max-width: 1099px) {
+    .contactUsSection, .endSections, .endLinks {
+        margin: 0 10px 20px;
+    }
 }

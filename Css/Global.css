@@ -41,7 +41,7 @@ a {
     /* cursor: url(https://i.postimg.cc/Kj53Wkw9/2p.png), pointer !important; */
 }
 
-p,
+/* p,
 h1,
 h2,
 h2,
@@ -50,7 +50,7 @@ h4,
 h5,
 h6 {
     cursor: url(https://i.postimg.cc/SQ8S5JnP/360-F-213268478-0fd04f-F8-CKGRd-XBc8e-AHNJfdmtc-Mk3-Ea-1.png), text;
-}
+} */
 
 ::selection {
     color: var(--mainC);
@@ -65,8 +65,32 @@ body {
     color: var(--whiteC);
     background-color: var(--backC);
     /* background-image: url("../Image/bootstrap.jpg"); */
-    font-family: 'Shadows Into Light', "ink free", sans-serif, cursive;
-    overflow-x: hidden;
+    /* font-family: cursive; */
+    /* font-family: "ink free", sans-serif; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Patrick Hand', cursive; */
+    font-family: 'Caveat Brush', "ink free", cursive;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+:focus::-moz-input-placeholder {
+    opacity: 0;
+}
+
+:focus::-ms-input-placeholder {
+    opacity: 0;
+}
+
+:focus::-o-input-placeholder {
+    opacity: 0;
 }
 
 /* width */
@@ -77,6 +101,7 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
     background-color: var(--secondC);
+    /* box-shadow: 0 0 5px var(--shadowC) inset; */
 }
 
 /* Handle */
@@ -95,26 +120,73 @@ body {
     background-color: var(--fifthC);
 }
 
+::-webkit-scrollbar-corner {
+    background-color: var(--secondC);
+}
+
 a {
     text-decoration: none;
 }
 
 hr {
-    width: 37.5%;
+    width: 50%;
     margin: 10px auto;
     border-color: var(--borderC);
+}
+
+.hrW100 {
+    width: 100%;
 }
 
 input {
     all: unset;
 }
 
+/* .upTo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(https://i.postimg.cc/kGk7H50v/scroll-up.png) no-repeat center center;
+    background-size: 125%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #555;
+    box-shadow: 0 5px 10px -5px var(--shadowC);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    opacity: 1;
+}
+
+.upTo.show {
+    opacity: .5;
+}
+
+.upTo:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.upTo:active {
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+} */
+
+
 .scrollTop {
     display: block;
     width: 50px;
     height: 50px;
-    /*background-color: #333;
-    */
+    /* background-color: #333; */
     background: url(https://i.postimg.cc/kGk7H50v/scroll-up.png) no-repeat center center;
     background-size: 125%;
     cursor: pointer;
@@ -168,4 +240,4 @@ input {
 .scrollDown:active {
     filter: brightness(90%);
     -webkit-filter: brightness(90%);
-}
+}/* ready player one */
